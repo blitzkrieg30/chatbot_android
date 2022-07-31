@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:layout_margin="10dp"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textregister"
+        android:text=" Register Here"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#0085FB"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_email"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/textregister"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textregister"
+        android:layout_marginTop="100dp"
+        android:hint="Enter your password"
+        android:inputType="textPassword"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:shadowColor="@color/black"
+        android:backgroundTint="#0085FB"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/signup_password"
+        android:layout_marginTop="60dp"
+        android:id="@+id/signup_button"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_register1"
+        android:text="Already Registered? Login Here"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/signup_button"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp" />
+</RelativeLayout>
